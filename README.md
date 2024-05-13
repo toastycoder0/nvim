@@ -2,4 +2,4 @@
 
 My personal Neovim configuration
 
-![Editor Preview](./nvim-preview.png)
+![Editor Preview](./assets/preview.png)
