@@ -1,10 +1,10 @@
-local eslint = {"eslint_d"}
+local eslint = { "eslint" }
 
 require("lint").linters_by_ft = {
   javascript = eslint,
   typescript = eslint,
   javascriptreact = eslint,
-  typescriptreact = eslint
+  typescriptreact = eslint,
 }
 
 vim.api.nvim_create_autocmd({ "InsertLeave", "BufWritePost", "BufEnter" }, {
