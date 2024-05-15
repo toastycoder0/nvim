@@ -19,6 +19,7 @@ Plug 'lukas-reineke/lsp-format.nvim'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'tpope/vim-dadbod'
 Plug 'tpope/vim-dotenv'
+Plug 'kdheepak/lazygit.nvim'
 call plug#end()
 
 colorscheme onedark
@@ -61,4 +62,5 @@ lua require('treesitter')
 lua require('lsp')
 lua require('linter')
 lua require('format')
+lua require('git')
 lua require'colorizer'.setup()
