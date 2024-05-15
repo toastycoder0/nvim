@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 
 local map = vim.keymap.set
 
+map("n", "<leader>db", "<cmd>:DBUI<cr>", { desc = "Open database client" })
+
 map("n", "<leader>fe", vim.cmd.Ex, { desc = "Open file manager" })
 map("n", "<C-S>", "<cmd>:Startify<cr>", { desc = "Open file manager" })
 

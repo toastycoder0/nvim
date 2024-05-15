@@ -16,6 +16,9 @@ Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
 Plug 'mfussenegger/nvim-lint'
 Plug 'lukas-reineke/lsp-format.nvim'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'tpope/vim-dadbod'
+Plug 'tpope/vim-dotenv'
 call plug#end()
 
 colorscheme onedark
@@ -34,6 +37,19 @@ set mouse=a
 set clipboard=unnamedplus
 filetype plugin on
 set ttyfast
+
+let g:db_ui_env_variable_url = 'DATABASE_URL'
+let g:db_ui_env_variable_name = 'DATABASE_NAME'
+let g:db_ui_icons = {
+    \ 'expanded': '▾',
+    \ 'collapsed': '▸',
+    \ 'saved_query': '*',
+    \ 'new_query': '+',
+    \ 'tables': '~',
+    \ 'buffers': '»',
+    \ 'connection_ok': '✓',
+    \ 'connection_error': '✕',
+    \ }
 
 let g:lightline = {
       \ 'colorscheme': 'one',
