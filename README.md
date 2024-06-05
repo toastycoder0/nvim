@@ -2,4 +2,4 @@
 
 My personal Neovim configuration
 
-![Editor Preview](./assets/preview.png)
+![Editor Preview](./assets/editor.webp)
