@@ -1,15 +1,11 @@
 return {
-  "olimorris/onedarkpro.nvim",
-  priority = 1000,
+  "Mofiqul/dracula.nvim",
+  lasy = false,
   config = function()
-    require("onedarkpro").setup({
-      -- colors = {
-      --   selection = "#C376DA",
-      -- },
-      options = {
-        transparency = true,
-        selection = true,
-      },
+    local dracula = require("dracula")
+    dracula.setup({
+      transparent_bg = true,
     })
+    vim.cmd([[colorscheme dracula]])
   end,
 }
